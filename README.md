@@ -23,6 +23,12 @@ When formatting long list, BSD-style is faster than GNU-style, but GNU-style is 
 
 CJK (wide) characters are well supported thanks to [`cjkjust`](https://pypi.org/project/cjkjust/).
 
+## Installation
+
+```
+pip install lscolumn
+```
+
 ## Functions and Classes
 
 For detailed help, try `help(...)` in Python REPL.
