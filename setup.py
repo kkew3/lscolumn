@@ -10,7 +10,7 @@ setuptools.setup(
     description=('Print a list of strings in columns like in `ls`.'),
     long_description=readme,
     long_description_content_type='text/markdown',
-    version='0.1.0',
+    version='0.1.1',
     license='MIT',
     classifiers=[
         'License :: OSI Approved :: MIT License',
@@ -20,7 +20,7 @@ setuptools.setup(
     author='Kaiwen Wu',
     author_email='kps6326@hotmail.com',
     package_dir={'': 'src'},
-    packages=setuptools.find_packages(where='src'),
+    py_modules=['lscolumn'],
     install_requires=[
         'cjkjust',
     ],
