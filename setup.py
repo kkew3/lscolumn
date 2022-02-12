@@ -10,7 +10,8 @@ setuptools.setup(
     description=('Print a list of strings in columns like in `ls`.'),
     long_description=readme,
     long_description_content_type='text/markdown',
-    version='0.1.1',
+    url='https://github.com/kkew3/lscolumn',
+    version='0.1.1.1',
     license='MIT',
     classifiers=[
         'License :: OSI Approved :: MIT License',
