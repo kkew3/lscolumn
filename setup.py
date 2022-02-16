@@ -11,7 +11,7 @@ setuptools.setup(
     long_description=readme,
     long_description_content_type='text/markdown',
     url='https://github.com/kkew3/lscolumn',
-    version='0.1.1.1',
+    version='0.1.1.2',
     license='MIT',
     classifiers=[
         'License :: OSI Approved :: MIT License',
@@ -23,6 +23,6 @@ setuptools.setup(
     package_dir={'': 'src'},
     py_modules=['lscolumn'],
     install_requires=[
-        'cjkjust',
+        'cjkjust>=0.1.4',
     ],
 )
