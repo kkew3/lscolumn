@@ -50,7 +50,9 @@ class BSDFormatter:
         assert self.total_width >= 1, self.total_width
         assert self.width_between_cols >= 1, self.width_between_cols
 
-        if not strings:
+        # to support pandas.Series, numpy.ndarray, etc.
+        # pylint: disable=use-implicit-booleaness-not-len
+        if not len(strings):
             return
 
         column_width = max(map(cjkjust.cjklen, strings))
@@ -109,7 +111,9 @@ class GNUFormatter:
         assert self.total_width >= 1, self.total_width
         assert self.width_between_cols >= 1, self.width_between_cols
 
-        if not strings:
+        # to support pandas.Series, numpy.ndarray, etc.
+        # pylint: disable=use-implicit-booleaness-not-len
+        if not len(strings):
             return
 
         # find the maximum possible `expected_ncols`
